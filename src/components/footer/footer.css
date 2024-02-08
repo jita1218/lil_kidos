@@ -1,0 +1,46 @@
+.contact_container{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+    /* border: 0.5px solid grey; */
+gap: 1rem;
+}
+
+.log{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 12vw;
+    height:12vh;
+    /* border: 1px solid rebeccapurple; */
+}
+.contact_icons{
+    display: flex;
+    gap: 1rem;
+    /* width: 19vw;
+    height: 3vh; */
+    margin-bottom: 1rem;
+    /* border: 1px solid red; */
+}
+.inform_us{
+    display: flex;
+    gap: 1rem;
+    background-color: white;
+    /* color: red; */
+}
+
+.tex{
+    color: red;
+}
+
+.inform{
+    display: flex;
+    flex: 0.35 ;
+    gap: 0.5rem;
+    flex-direction: column;
+    background-color: white;
+
+/* border: 1px solid blue; */
+}
