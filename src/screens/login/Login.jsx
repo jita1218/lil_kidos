@@ -12,7 +12,7 @@ import "./login.css";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../Firebase";
 import { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -83,9 +83,7 @@ const Login = () => {
 
   return (
     <div className="login">
-      {/* <Link to="/">
-        {/* <img className="login__logo" src={LOGU} alt="" />  */}
-      {/* </Link>  */}
+     
       <div className="login_content">
         <h1 className="text">
           Let's Dream and Learn
