@@ -14,8 +14,7 @@ const Header = () => {
 
       <div className="home"><Link to='/image'>Images</Link></div>
       <div className="home"><Link to ='/video'>videos</Link></div>
-      <div className="home">About us</div>
-
+      <a href="#about" className='home'>About us</a>
       <div className="images"><Link to ='/login'>Login</Link></div>
     </div>
    

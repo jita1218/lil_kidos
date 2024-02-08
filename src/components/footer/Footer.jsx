@@ -3,12 +3,14 @@ import "./footer.css";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 import Imag from "./dreamkids.png";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="contact_container">
+      <div className="contact_container" id="about">
         {/* <h5>
           All of our content is created and curated by early childhood educators
           and experts, ensuring it aligns with the developmental needs and
@@ -24,15 +26,16 @@ const Footer = () => {
         {/* <h2>Contact Us</h2> */}
 
         <div className="contact_icons">
-          <link rel="stylesheet" href="" />
-          <FaFacebook />
-          <link rel="stylesheet" href="" />
-          <FaInstagram />
-          <link rel="stylesheet" href="" />
-          <FaGithub />
-          <link rel="stylesheet" href="" />
-          <FaFacebook />
+          <a  target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100088249653067&sk=about_details" >
+          <FaFacebook /></a>
+          <a   target="_blank" rel="noreferrer" href="https://www.instagram.com/jita1218/" >
+          <FaInstagram /></a>
+          <a   target="_blank" rel="noreferrer" href="https://github.com/jita1218/lil_kidos/tree/main/src" >
+          <FaGithub /></a>
+          <a   target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jitu-verma-a83a8a250/" >
+          <FaLinkedin /></a>
         </div>
+       
       </div>
       <div className="inform_us">
         <div className="inform">
@@ -88,7 +91,9 @@ const Footer = () => {
             <li>imaging</li>
           </ul>
         </div>
+        
       </div>
+      <small className="copy">@jita1218</small>
     </footer>
   );
 };
