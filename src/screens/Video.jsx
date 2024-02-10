@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./video.css";
 
 
-const API = "AIzaSyBa406V2iv23hGv9lEVG6bwrha6vHrjExY";
+const API = "AIzaSyCwE8bKnq_cdpODOGC3F0IicG9qL9o-HRI";
 const channelId = "UCbCmjCuTUZos6Inko4u57UQ";
-var  searchTerm ="";
+// var  searchTerm ="";
+// var fetchurl =
+// ".https://youtubeogleapis.com/youtube/v3/search?part=snippet&channelId=UCbCmjCuTUZos6Inko4u57UQ&maxResults=10&q=${searchTerm}&key=AIzaSyAtXwqJxUK8_mIJlqUt1LCq2PWoZ1_ggho";
 
-var fetchurl =
-".https://youtubeogleapis.com/youtube/v3/search?part=snippet&channelId=UCbCmjCuTUZos6Inko4u57UQ&maxResults=10&q=${searchTerm}&key=AIzaSyAtXwqJxUK8_mIJlqUt1LCq2PWoZ1_ggho";
 export const Video = () => {
   const [allvideos, setAllvideos] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -15,7 +15,7 @@ export const Video = () => {
 
 
   useEffect(() => {
-    const fetchurl = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCbCmjCuTUZos6Inko4u57UQ&maxResults=10&q=${searchTerm}&key=AIzaSyAtXwqJxUK8_mIJlqUt1LCq2PWoZ1_ggho';
+    const fetchurl = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&maxResults=10&q=${searchTerm}&key=${API}`;
 
 
     fetch(fetchurl)
