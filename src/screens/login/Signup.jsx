@@ -1,17 +1,15 @@
 import React, { useState } from "react";
-import {
-  createUserWithEmailAndPassword,
-} from "firebase/auth";
+// import {
+//   createUserWithEmailAndPassword,
+// } from "firebase/auth";
 import "./login.css";
-// import"./Login.jsx"; // Remove this line if not used
-// import { auth } from "../../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../Firebase.js";
 import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const [user, loading] = useAuthState(auth);
 
@@ -35,17 +33,17 @@ const Signup = () => {
       return;
     }
   
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log("User signed up successfully:", user);
-        alert("Your account has been created successfully!");
-        navigate("/");
-      })
-      .catch((error) => {
-        console.error("Error signing up:", error);
-        alert("Failed to create account: " + error.message);
-      });
+    // createUserWithEmailAndPassword(auth, email, password)
+    //   .then((userCredential) => {
+    //     const user = userCredential.user;
+    //     console.log("User signed up successfully:", user);
+    //     alert("Your account has been created successfully!");
+    //     navigate("/");
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error signing up:", error);
+    //     alert("Failed to create account: " + error.message);
+    //   });
   };
 
 

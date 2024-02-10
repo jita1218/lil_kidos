@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import {
-  createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithPopup,
@@ -60,23 +59,23 @@ const Login = () => {
 
 
   
-  const register = (e) => {
-    e.preventDefault();
+  // const register = (e) => {
+  //   e.preventDefault();
 
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((auth) => {
+  //   createUserWithEmailAndPassword(auth, email, password)
+  //     .then((auth) => {
        
-        console.log(auth);
-        alert("Your ID card is created, You are now logged in"); // ...
-      })
-      .catch((error) => {
-        console.log(error.message);
-        alert(
-          "type your email and password on the boxes above, then click sign up"
-        );
-        // ..
-      });
-  };
+  //       console.log(auth);
+  //       alert("Your ID card is created, You are now logged in"); // ...
+  //     })
+  //     .catch((error) => {
+  //       console.log(error.message);
+  //       alert(
+  //         "type your email and password on the boxes above, then click sign up"
+  //       );
+  //       // ..
+  //     });
+  // };
   // to here
 
   if (loading) return <h1>Hey, you are Beautiful</h1>;
