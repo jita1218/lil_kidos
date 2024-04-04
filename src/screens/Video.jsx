@@ -4,9 +4,6 @@ import "./video.css";
 
 const API = "AIzaSyCwE8bKnq_cdpODOGC3F0IicG9qL9o-HRI";
 const channelId = "UCbCmjCuTUZos6Inko4u57UQ";
-// var  searchTerm ="";
-// var fetchurl =
-// ".https://youtubeogleapis.com/youtube/v3/search?part=snippet&channelId=UCbCmjCuTUZos6Inko4u57UQ&maxResults=10&q=${searchTerm}&key=AIzaSyAtXwqJxUK8_mIJlqUt1LCq2PWoZ1_ggho";
 
 export const Video = () => {
   const [allvideos, setAllvideos] = useState([]);
@@ -39,13 +36,16 @@ export const Video = () => {
   console.log(allvideos);
 
   return (
-    <div className="video_container">
-       <input
+    <>
+<input
         type="text"
+        className="searchbar"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        placeholder="kido rhymes"
+        placeholder="kido's rhymes"
       />
+    <div className="video_container">
+       
 
       {allvideos.map((item) => {
         return (
@@ -64,6 +64,7 @@ src= {item && item.Videolink}
         );
       })}
     </div>
+    </>
   );
 };
 

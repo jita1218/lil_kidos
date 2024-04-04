@@ -1,11 +1,13 @@
 .apiheader{
     display: flex;
+    flex-direction: column;
     /* flex: 0.1; */
-    border: 1px solid black;
-    padding: 10rem;
+    /* border: 1px solid black; */
+    padding: 5rem;
+    gap: 1rem;
     background-image: url('./vg.jpg');
     background-size: cover; /* Adjust as needed */
-    background-position: center center; /* Adjust as needed */
+    background-position:  center; /* Adjust as needed */
     background-attachment: fixed;
     
 }
@@ -14,7 +16,10 @@
     /* display: flex; */
     /* flex: 0.4; */
     text-align: justify;
-    margin: 2 0 2 2;
+    /* border: 1px solid black; */
+    width: 40%;
+
+    /* margin: 2 0 2 2; */
 
 
 }

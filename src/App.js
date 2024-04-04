@@ -4,8 +4,8 @@ import Ima from "./components/image_Api/Ima";
 import Image from "./screens/Image";
 import "./App.css";
 import { Video } from "./screens/Video";
-// import Login from "./screens/login/Login";
-// import Signup from "./screens/login/Signup"
+import Login from "./screens/login/Login";
+import Signup from "./screens/login/Signup"
 import Footer from "./components/footer/Footer";
 import Apiheader from "./screens/Apiheader/Apiheader";
 import About from "./components/about/About";
@@ -18,13 +18,13 @@ const App = () => {
     <Router>
       <div className="App">
        <Routes>
-       {/* <Route path="/login" element={
+       <Route path="/login" element={
           <>
           <Login/>
           </>
-        }></Route> */}
+        }></Route>
 
-{/* <Route path="/Signup" element={<Signup />} /> */}
+<Route path="/Signup" element={<Signup />} />
 
         
         <Route path="/" element={

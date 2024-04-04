@@ -5,8 +5,17 @@
   /* ; */
 }
 
+.searchbar{
+  display: flex;
+  border: 1px solid black;
+  height: 3rem;
+  margin-left: 4rem;
+  align-items: center;
+  border-radius: 2rem;
+  width: 90%;
+}
 .videoplay {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   max-width: 560px;
   height: 315px;
 }
@@ -14,7 +23,7 @@
 .videoplay>iframe {
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   padding: 10px;
   width: 100%;
   max-width: 560px;
