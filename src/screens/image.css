@@ -6,6 +6,8 @@
   background-size: cover; /* Adjust as needed */
   background-position: center center; /* Adjust as needed */
   background-attachment: fixed;
+  background-color: rgb(244, 244, 235);
+
 }
 .search-container {
   position: relative;

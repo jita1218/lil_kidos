@@ -13,16 +13,16 @@ const Ima = () => {
   return (
     <div className="image_container">
       <div className="left">
+      <h4 className="para">
+            Welcome to Dream Kids - Where Learning Begins with Fun!
+             </h4>
         <div className="lines">
-          <h4 className="para">
-          Explore our collection of image galleries and flashcards designed to
-          introduce children to new words, concepts, and ideas in a visually
-          appealing and memorable way.
-          </h4>
-          <h4 className="para"> Get ready to sing, dance, and rhyme your
-          way to learning success! Our collection of catchy rhyme videos covers
-          a wide range of topics, from the alphabet and numbers to colors,
-          shapes, and beyond.</h4>
+          <h4 className="para"> Dream Kids is an engaging online platform designed specifically for
+            nursery-aged children, providing a delightful learning experience
+            through interactive activities, captivating alphabets, and catchy
+            rhymes.</h4>
+             
+          
         </div>
         <div className="butn">
           <button className="butn_icon" onClick={clickHandler}>

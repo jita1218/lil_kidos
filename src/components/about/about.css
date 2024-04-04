@@ -1,0 +1,34 @@
+.about{
+    display: flex;
+    flex: column;
+    width: 100%;
+    height: 80vh;
+    /* background-color: lightyellow; */
+}
+
+.righ{
+    display: flex;
+    flex: 0.6;
+    flex-direction: column;
+    text-align: justify;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    /* margin: 2rem; */
+    /* gap: 1rem; */
+    margin-right: 5rem;
+}
+
+.lef{
+    display: flex;
+    flex: 0.4;
+    flex-direction: column;
+    margin: 5rem;
+    align-items: center;
+    justify-content:center;
+    background-color: transparent;
+    /* border-radius: 5rem 0 5rem 0; */
+    /* border: 1px solid red; */
+    }
+

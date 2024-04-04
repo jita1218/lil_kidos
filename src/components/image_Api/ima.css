@@ -5,6 +5,7 @@
     height: 90vh;
     background-image: url('./bg.jpg');
     background-size: cover;
+    /* border: 1px solid red; */
 }
 
 .left{
@@ -14,9 +15,21 @@ flex-direction: column;
 margin: 5rem;
 align-items: center;
 justify-content:center;
-margin-top: 12rem;
+margin-top: 20rem;
+/* gap: 1rem; */
+/* border: 1px solid red; */
+}
 
-/* background-color: blue; */
+.para{
+    text-align: justify;
+    font-size: larger;
+    /* font-style: italic; */
+    /* border: 1px solid red; */
+    /* margin: 0.5rem; */
+    margin-top: 2rem;
+    
+    
+    
 }
 
 .right{
@@ -37,16 +50,19 @@ margin-top: 12rem;
     justify-content:center;
     text-align: justify;
     width: 20vw;
+    /* margin-top: 2rem; */
     /* height: 40vh; */
+    /* border: 1px soid red; */
 }
 
 .butn_icon{
     display: flex;
     width: 6vw;
-    border-radius: 0  2rem 0 2rem;
+    border-radius:   2rem 2rem;
     justify-content: center;
     box-sizing:content-box;
     padding: 15px;
+    margin-top: 4rem;
     margin-right: 4rem;
     background-color: var(--pink-color);
 }
@@ -58,7 +74,6 @@ margin-top: 12rem;
 
 .butn_icon:hover{
  
-    background-color: var(--blue-color);
     color: white;
     transition: 400ms;
 }

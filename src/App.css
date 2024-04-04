@@ -1,7 +1,10 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@400;600&display=swap");
 
 :root{
   --header-height: 3rem;
+  --body-font: "Poppins", sans-serif;
+
   --blue-color: #78D3EA;
   --green-color: #A1EEBD;
   --yellow-color:#F6F7C4;
@@ -30,6 +33,7 @@ button,
 input,
 textarea{
   font-family: bold;
+  background-color: rgb(244, 244, 235);
 }
 
 ul{

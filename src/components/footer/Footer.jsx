@@ -11,20 +11,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="contact_container" id="about">
-        {/* <h5>
-          All of our content is created and curated by early childhood educators
-          and experts, ensuring it aligns with the developmental needs and
-          interests of young children.
-        </h5>
-        <h5>
-          
-          Our platform offers interactive activities and games that complement
-          our rhyme videos, providing hands-on learning experiences that keep
-          kids actively engaged and eager to learn.
-        </h5> */}
         <h2 className="log"><img src={Imag} alt='logo' ></img></h2>
-        {/* <h2>Contact Us</h2> */}
-
         <div className="contact_icons">
           <a  target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100088249653067&sk=about_details" >
           <FaFacebook /></a>

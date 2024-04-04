@@ -6,6 +6,9 @@ import {
   signInWithPopup,
   
 } from "firebase/auth";
+import "./ProfileDisplay.jsx"
+import { db } from "../../Firebase.js";
+import { collection, query, where, getDocs } from "firebase/firestore";
 import "./login.css";
 // import { auth } from "../../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -14,6 +17,8 @@ import { useEffect } from "react";
 import {  useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const [userProfile, setUserProfile] = useState(null);
+
   const navigate = useNavigate();
   const [user, loading] = useAuthState(auth);
   const googleProvider = new GoogleAuthProvider();
@@ -31,7 +36,6 @@ const Login = () => {
  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [UserName , setUserName] = useState("");
   useEffect(() => {
     if (user) {
       console.log("/");
@@ -43,7 +47,9 @@ const Login = () => {
   const signIn = (e) => {
     e.preventDefault();
 
-    signInWithEmailAndPassword(auth, email, password)
+    try {
+      // const authUser = await signInWithEmailAndPassword(auth, email, password);
+      signInWithEmailAndPassword(auth, email, password)
       .then((auth) => {
         // Signed in
         console.log(auth);
@@ -55,28 +61,27 @@ const Login = () => {
         alert("ID is mismatching, wrong mail or password");
         // ..
       });
+      // Fetch user profile data from Firestore
+      const profileQuery = query(
+        collection(db, "profiles"),
+        where("userId", "==", authUser.user.uid)
+      );
+      // const profileSnapshot = await getDocs(profileQuery);
+      
+      if (!profileSnapshot.empty) {
+        // User profile found
+        setUserProfile(profileSnapshot.docs[0].data());
+      } else {
+        // User profile not found
+        setUserProfile(null);
+      }
+    } catch (error) {
+      console.log(error.message);
+      // Handle login error
+    }
+
+   
   };
-
-
-  
-  // const register = (e) => {
-  //   e.preventDefault();
-
-  //   createUserWithEmailAndPassword(auth, email, password)
-  //     .then((auth) => {
-       
-  //       console.log(auth);
-  //       alert("Your ID card is created, You are now logged in"); // ...
-  //     })
-  //     .catch((error) => {
-  //       console.log(error.message);
-  //       alert(
-  //         "type your email and password on the boxes above, then click sign up"
-  //       );
-  //       // ..
-  //     });
-  // };
-  // to here
 
   if (loading) return <h1>Hey, you are Beautiful</h1>;
 

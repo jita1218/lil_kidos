@@ -1,0 +1,30 @@
+.us{
+    display: flex;
+    flex: column;
+    width: 100%;
+    height: 70vh;
+    /* background-color: lightyellow; */
+}
+
+.let{
+    display: flex;
+    flex: 0.4;
+    flex-direction: column;
+    margin: 5rem;
+    align-items: center;
+    justify-content:center;
+    background-color: transparent;
+    border-radius: 5rem;
+}
+
+.rigt{
+    display: flex;
+    flex: 0.6;
+    background-image: url(./indian.jpg);
+    background-size: cover;
+    border-radius: 9rem  0 0 9rem;
+}
+.par{
+    text-align: justify;
+    font-size: larger;
+}

@@ -4,9 +4,12 @@
     background-color:white;
     justify-content: center;
     align-items: center;
-    /* border: 0.5px solid grey; */
-gap: 1rem;
+    gap: 1rem;
+    margin-top: 2rem;
+    background-color: rgb(244, 244, 235);
+
 }
+
 
 .log{
     display: flex;
@@ -27,7 +30,7 @@ gap: 1rem;
 .inform_us{
     display: flex;
     gap: 1rem;
-    background-color: white;
+    background-color: rgb(244, 244, 235);
     /* color: red; */
 }
 
@@ -46,7 +49,7 @@ gap: 1rem;
     flex: 0.35 ;
     gap: 0.5rem;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(244, 244, 235);
 
 /* border: 1px solid blue; */
 }
