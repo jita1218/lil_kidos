@@ -30,3 +30,21 @@
   height: 315px;
 }
 
+@media screen  and (max-width: 600px) {
+  .video_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+  }
+  
+  .searchbar{
+    display: flex;
+    /* border: 1px solid black; */
+    height: 3rem;
+    margin-left: 4rem;
+    align-items: center;
+    border-radius: 2rem;
+    width: 90%;
+  }
+  
+}

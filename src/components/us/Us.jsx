@@ -5,21 +5,16 @@ const Us = () => {
   return (
     <div className="us">
       <div className="let">
-          <h4 className="par">
-            At Dream Kids, we understand that early childhood education sets the
-            stage for future success. That's why we prioritize creating a safe,
-            interactive, and enriching online space tailored specifically for
-            nursery kids. Our content is meticulously curated to align with
-            early learning objectives, ensuring that children not only enjoy
-            their time on the platform but also develop essential skills in
-            literacy, language, and cognitive development. With Dream Kids,
-            parents can rest assured knowing their child is in good hands,
-            learning and growing in a stimulating and supportive environment.
-          </h4>
+        <p className="par">
+          At Dream Kids, we create a safe and enriching online space for
+          nursery-aged children, aligning with early learning objectives to
+          develop essential skills. Parents can trust that their children are
+          learning and growing in a stimulating, supportive environment.
+        </p>
       </div>
 
       <div className="rigt">
-        <div className="image"></div>
+        <div className="imag"></div>
       </div>
     </div>
   );

@@ -29,7 +29,6 @@ function Image() {
       } catch (error) {
         console.error("Error fetching images:", error);
       } finally {
-        // Set loading to false when the request is complete
         setLoading(false);
       }
     };
@@ -41,10 +40,10 @@ function Image() {
     <>
       <div className="container">
         <div className="form_container">
-          <h3>Search and Learn</h3>
+          <h4 className="h3">Search and Learn</h4>
           <form>
             <div className="search-container">
-              <AiOutlineSearch className="search-icon" />
+            <AiOutlineSearch className="search-icon" />
 
               <input
                 type="text"

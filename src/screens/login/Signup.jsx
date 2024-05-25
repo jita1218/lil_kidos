@@ -7,6 +7,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../Firebase.js";
 import { useNavigate, Link } from "react-router-dom";
 import { useEffect } from "react";
+
 const Signup = () => {
   const navigate = useNavigate();
 
@@ -19,7 +20,8 @@ const Signup = () => {
 
   useEffect(() => {
     if (user) {
-      navigate('/'); // Redirect to home page if user is logged in
+      navigate('/'); 
+      alert("already have an account")// Redirect to home page if user is logged in
     }
   }, [user, navigate]);
 
@@ -48,9 +50,6 @@ const Signup = () => {
 
   return (
     <div className="login">
-      <div className="login_content">
-        <h1 className="text">Let's Dream and learn</h1>
-      </div>
 
       <div className="login__container">
         <h1>Sign-Up</h1>

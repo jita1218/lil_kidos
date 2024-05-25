@@ -6,24 +6,20 @@ const About = () => {
   return (
     <div className="about">
       <div className="lef">
-        <img src={img} className="kido_image" alt="kido" />
       </div>
 
       <div className="righ">
-      <h4 className="para">
+        <h4 className="para">
           Dream Kids is more than just an educational website;
-          </h4>
-
-         <h4 className="para">
-          it's a digital
-          playground where little learners embark on exciting adventures through
-          the world of letters and melodies.</h4>  <h4 className="para">With our carefully crafted content,
-          children explore the alphabet in a playful environment, immerse
-          themselves in delightful rhymes, and discover the joy of learning in
-          every click. From A to Z, Dream Kids is where education meets
-          entertainment, nurturing young minds while they have a blast!</h4> 
-        </div>
-      
+        </h4>
+        <p className="para">
+          Dream Kids is a digital playground where young learners embark on
+          exciting adventures through letters and melodies. With carefully
+          crafted content, children explore the alphabet, enjoy delightful
+          rhymes, and discover the joy of learning in a fun, engaging
+          environment.
+        </p>
+      </div>
     </div>
   );
 };

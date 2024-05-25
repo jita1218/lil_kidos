@@ -9,11 +9,11 @@ import Imag from "./dreamkids.png";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <div className="contact_container" id="about">
         <h2 className="log"><img src={Imag} alt='logo' ></img></h2>
         <div className="contact_icons">
-          <a  target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100088249653067&sk=about_details" >
+          <a  target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100088249653067&sk=about_details"  >
           <FaFacebook /></a>
           <a   target="_blank" rel="noreferrer" href="https://www.instagram.com/jita1218/" >
           <FaInstagram /></a>

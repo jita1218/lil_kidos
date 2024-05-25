@@ -6,7 +6,7 @@ import Imag from './dreamkids.png';
 
 const Header = () => {
   return (
-   
+   <>
     <div className="header">
 
       <div className="logo"><img src={Imag} alt='logo' ></img></div>
@@ -17,7 +17,7 @@ const Header = () => {
       <a href="#about" className='home'>About us</a>
       <div className="images"><Link to ='/login'>Login</Link></div>
     </div>
-   
+    </>
   )
 }
 

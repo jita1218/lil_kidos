@@ -9,17 +9,22 @@
     background-size: cover; /* Adjust as needed */
     background-position:  center; /* Adjust as needed */
     background-attachment: fixed;
-    
+    background-repeat: no-repeat;
 }
 
 .rhyme{
-    /* display: flex; */
-    /* flex: 0.4; */
     text-align: justify;
-    /* border: 1px solid black; */
+    font-size: large;
     width: 40%;
+}
 
-    /* margin: 2 0 2 2; */
-
-
+@media screen and (max-width: 600px){
+    .apiheader{
+        display: flex;
+    }
+    .rhyme{
+        text-align: justify;
+        width: 100%;
+    }
+    
 }

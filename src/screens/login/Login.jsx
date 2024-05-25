@@ -60,17 +60,14 @@ const Login = () => {
 
   return (
     <div className="login">
-      {/* <Link to="/">
-        {/* <img className="login__logo" src={LOGU} alt="" />  */}
-      {/* </Link>  */}
-      <div className="login_content">
-        <h1 className="text">
+      {/* <div className="login_content">
+        <h3 className="text">
           Let's Dream and learn
-        </h1>
-      </div>
+        </h3>
+      </div> */}
 
       <div className="login__container">
-        <h1 >Sign-in</h1>
+        <h1 className="text" >Sign-in</h1>
 
         <button onClick={GoogleLogin} className="login__registerButton-google">
           Sign in with Google

@@ -10,16 +10,15 @@
     display: flex;
     flex: 0.4;
     flex-direction: column;
-    margin: 5rem;
+    margin: auto 5rem;
     align-items: center;
     justify-content:center;
     background-color: transparent;
-    border-radius: 5rem;
 }
 
 .rigt{
     display: flex;
-    flex: 0.6;
+    flex: 0.5;
     background-image: url(./indian.jpg);
     background-size: cover;
     border-radius: 9rem  0 0 9rem;
@@ -27,4 +26,42 @@
 .par{
     text-align: justify;
     font-size: larger;
+}
+
+@media screen and (max-width:600px) {
+    .us{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100vh;
+        margin: 2rem auto;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    .par{
+        text-align: justify;
+        width: 90vw;
+    }
+    .rigt{
+        display: flex;
+        flex: 0.6;
+        width: 90%;
+        background-image: url(./indian.jpg);
+        background-size: cover;
+        border-radius:   0 0  9rem 9rem;
+    }
+    .let{
+        display: flex;
+        flex: 0.5;
+        flex-direction: column;
+        text-align: justify;
+        user-select: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        /* border: 1px solid blue; */
+        /* margin-right: 5rem; */
+    }
+    
 }

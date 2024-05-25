@@ -9,20 +9,26 @@
     background-color: rgb(244, 244, 235);
 
 }
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 
 .log{
     display: flex;
     justify-content: center;
     justify-items: center;
-    width: 12vw;
-    height:12vh;
+    width: 20vw;
+    height:15vh;
     /* border: 1px solid rebeccapurple; */
 }
 .contact_icons{
     display: flex;
     gap: 1rem;
-    /* width: 19vw;
+    /* width: 19vw; */
+    /* 
     height: 3vh; */
     margin-bottom: 1rem;
     /* border: 1px solid red; */
@@ -30,6 +36,10 @@
 .inform_us{
     display: flex;
     gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 5rem;
     background-color: rgb(244, 244, 235);
     /* color: red; */
 }
@@ -52,4 +62,37 @@
     background-color: rgb(244, 244, 235);
 
 /* border: 1px solid blue; */
+}
+
+@media screen and (max-width:600px) {
+    .contact_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .log{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin: 0 auto;
+        width: 25vw;
+        height:15vh;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin:0 auto;
+justify-content: center;
+align-items: center;    
+    }
+    .inform_us{
+        display: flex;
+        width: 90%;
+        gap: 1rem;
+        /* border: 1px solid red; */
+        height: 40vh;
+        background-color: rgb(244, 244, 235);
+    }
 }

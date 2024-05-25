@@ -3,32 +3,75 @@
     flex: column;
     width: 100%;
     height: 80vh;
-    /* background-color: lightyellow; */
+    margin: 0 auto;
 }
 
 .righ{
     display: flex;
-    flex: 0.6;
+    flex: 0.4;
     flex-direction: column;
     text-align: justify;
     user-select: none;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
-    /* margin: 2rem; */
-    /* gap: 1rem; */
-    margin-right: 5rem;
+    margin: 0 auto;
+    /* margin-right: 5rem; */
+    margin-left: 10rem;
 }
 
 .lef{
     display: flex;
     flex: 0.4;
+    background-image: url('./boy.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     flex-direction: column;
     margin: 5rem;
+    border-radius: 0 0 5rem 5rem;
     align-items: center;
     justify-content:center;
     background-color: transparent;
-    /* border-radius: 5rem 0 5rem 0; */
-    /* border: 1px solid red; */
+
     }
 
+@media screen and (max-width:600px) {
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100vh;
+    }
+    .para{
+        text-align: justify;
+        width: 90vw;
+    }
+    .righ{
+        display: flex;
+        flex: 0.5;
+        gap: 1rem;
+        flex-direction: column;
+        text-align: justify;
+        user-select: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .lef{
+        display: flex;
+        flex: 0.5;
+        position: relative;
+        width: 90%;
+        background-image: url('./boy.png');
+        border-radius: 15rem 15rem 0 0 ;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        justify-content:center;
+        background-color: transparent;
+        }
+}
