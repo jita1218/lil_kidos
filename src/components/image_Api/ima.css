@@ -110,7 +110,6 @@ margin-top: 20rem;
         .image{
             display: flex;
             width: 100vw;
-            /* flex: 0.5; */
             background-image: url('./image.png');
             background-size: cover;
             background-position: center;
@@ -120,7 +119,6 @@ margin-top: 20rem;
         .right{
             display: flex;
             flex: 0.5;
-            border: 1px solid white;
         }
         .butn_icon{
             display: flex;
